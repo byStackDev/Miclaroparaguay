@@ -30,13 +30,12 @@ Registrate con tu correo, asociá tus productos Claro y listo!
 
 [<img src="https://github.com/machiav3lli/oandbackupx/blob/034b226cea5c1b30eb4f6a6f313e4dadcbb0ece4/badge_github.png"
     alt="Get it on GitHub"
-    height="80">](https://github.com/vfsfitvnm/ViMusic/releases/latest)
-[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png"
-     alt="Get it on IzzyOnDroid"
-     height="80">](https://apt.izzysoft.de/fdroid/index/apk/it.vfsfitvnm.vimusic)
+    height="80">](https://github.com/byStackDev/Miclaroparaguay/releases/tag/v0.1)
+
 
 ## Descargo de Responsabilidad
 Este proyecto y su contenido no están afiliados, financiados, autorizados, respaldados o asociados de ninguna manera con AMX PARAGUAY S.A., CLARO o cualquiera de sus afiliados y subsidiarias.
+
 Cualquier marca comercial, marca de servicio, nombre comercial u otros derechos de propiedad intelectual utilizados en este proyecto pertenecen a sus respectivos propietarios.
 La aplicación no busca supantar a la original de la compañia, solo brinda acceso a la plataforma, no recopila ninguna información, tampoco tiene acceso al dispositivo ni hace seguimiento al usuario. 
 
@@ -44,4 +43,4 @@ La aplicación no busca supantar a la original de la compañia, solo brinda acce
 - El tema por defecto es modo claro
 - Permite la navegación en diferentes páginas 
 - Soporta desde android 7.0 en adelante
-# miclaroparaguay
+
