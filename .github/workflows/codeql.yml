@@ -1,21 +1,42 @@
-name: "CodeQL"
-on: push
+name: "CodeQL and Build"
+on:
+  push:
+    branches: [ "main" ]
 
 jobs:
-  build:
+  codeql:
+    name: CodeQL Analysis
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up JDK 11
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: java  
+
+  build:
+    name: Build with Gradle
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Java 17
         uses: actions/setup-java@v2
         with:
-          java-version: 11
-          distribution: 'temurin'
+          java-version: 17 
+
       - name: Make gradlew executable
         run: chmod +x ./gradlew
+
       - name: Build with Gradle
         run: ./gradlew assembleDebug
-      - uses: actions/upload-artifact@v2
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v2
         with:
           name: app-release.apk
           path: app/release/app-release.apk
+
